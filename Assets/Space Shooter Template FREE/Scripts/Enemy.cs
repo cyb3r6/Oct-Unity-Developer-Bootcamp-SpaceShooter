@@ -61,7 +61,8 @@ public class Enemy : MonoBehaviour {
     //method of destroying the 'Enemy'
     void Destruction()                           
     {        
-        Instantiate(destructionVFX, transform.position, Quaternion.identity); 
+        Instantiate(destructionVFX, transform.position, Quaternion.identity);
+        GameManager.Instance.Score++;
         Destroy(gameObject);
     }
 }
