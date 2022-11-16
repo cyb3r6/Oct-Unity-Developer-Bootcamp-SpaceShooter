@@ -7,6 +7,8 @@ using UnityEngine;
 /// </summary>
 public class Enemy : MonoBehaviour {
 
+    public int reward = 10;
+
     #region FIELDS
     [Tooltip("Health points in integer")]
     public int health;
@@ -61,7 +63,8 @@ public class Enemy : MonoBehaviour {
     //method of destroying the 'Enemy'
     void Destruction()                           
     {        
-        Instantiate(destructionVFX, transform.position, Quaternion.identity); 
+        Instantiate(destructionVFX, transform.position, Quaternion.identity);
+        Actions.OnEnemyDestroyed(this);
         Destroy(gameObject);
     }
 }
