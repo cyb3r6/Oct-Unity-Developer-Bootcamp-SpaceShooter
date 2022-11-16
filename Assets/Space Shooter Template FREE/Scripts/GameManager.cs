@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
 
     [Header("UI Settings")]
     [SerializeField] private TMP_Text scoreText;
+    private float bounceFrequency = 5f;
+    private float bounceAmplitude = 0.02f;
 
     public static GameManager Instance
     {
@@ -37,4 +39,11 @@ public class GameManager : MonoBehaviour
 
         Instance = this;
     }
+
+    void Update()
+    {
+        scoreText.transform.localScale = Vector3.one + Vector3.one * (Mathf.Sin(Time.time
+            * bounceFrequency) * bounceAmplitude);
+    }
+
 }
