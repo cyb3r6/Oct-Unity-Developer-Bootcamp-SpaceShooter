@@ -53,10 +53,10 @@ public class PlayerMoving : MonoBehaviour {
             //    transform.position = Vector3.MoveTowards(transform.position, mousePosition, 30 * Time.deltaTime);
             //}
 
-            float horizontal = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
-            float vertical = Input.GetAxis("Vertical") * speed * Time.deltaTime;
+//            float horizontal = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
+//            float vertical = Input.GetAxis("Vertical") * speed * Time.deltaTime;
 
-            transform.Translate(horizontal, vertical, 0);
+//            transform.Translate(horizontal, vertical, 0);
             /*  if (Input.GetMouseButton(0)) //if mouse button was pressed       
               {
                   Vector3 mousePosition = mainCamera.ScreenToWorldPoint(Input.mousePosition); //calculating mouse position in the worldspace
