@@ -14747,6 +14747,7 @@ MonoBehaviour:
   - {fileID: 1413877261856170, guid: 499dcb895cf2840439bba0b55732e341, type: 3}
   - {fileID: 1413877261856170, guid: dd80900edec5c7b459ba738913152095, type: 3}
   - {fileID: 1413877261856170, guid: 645f7c1c57753f14f825c06da548b9dc, type: 3}
+  - {fileID: 1413877261856170, guid: 0d512f7ae626f6448ae8b6fbe0ab5af6, type: 3}
   nextFire: 0
   weaponPower: 1
   guns:
